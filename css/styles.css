@@ -1,8 +1,10 @@
 :root{
---red:#E06C78;
+--green:#3CA6A6;
 --black:#000000;
 --blue:#384E78;
 --white:#ffffff;
+--pino: #01050E
+;
 }
 
 *{
@@ -28,7 +30,7 @@ body{
     left: 0%;
     width: 100%;
     height: 60px;
-    background: #fff;
+    background: #024959;
 
     display: flex;
     justify-content: space-between;
@@ -38,11 +40,19 @@ body{
 .menu .logo-box{
     margin-left: 20px;
 }
+.menu .logo-box img{
+    width: 150px;
+    position: absolute;
+    margin: -30px 0px;
+
+}
 .menu .logo-box h1 a{
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 400;
-    color: var(--black);
+    color: var(--white);
+    position: relative;
+    margin: 0px 150px;
 }
 .menu .list-container{
     margin-right: 20px;
@@ -57,17 +67,17 @@ body{
     text-decoration: none;
     margin: 0px 10px;
     padding: 8px;
-    color: var(--black);
+    color: var(--white);
     border-radius: 24px;
     font-size: 16px;
     transition: 0.3s;
 }
 .menu .list-container ul li a.login{
-background: var(--red);
+background: var(--green);
 color: #fff;
 }
 .menu .list-container .lists li a:hover{
-    background: var(--red);
+    background: var(--green);
     color:#fff;
 }
 .btn-menu > .fa-bars{
@@ -115,5 +125,19 @@ color: #fff;
     color:#fff;
     margin-top: 20px;
 }
-    
 /** img header**/
+
+/** Sobre Mi**/
+.acerca-de{
+    background:var(--cream);
+}
+.acerca-de .img-perfil img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin:20px 30px;
+    position: absolute;
+}
+/** Sobre Mi**/
